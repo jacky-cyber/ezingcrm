@@ -1,0 +1,22 @@
+<!-- Header -->
+<div id="header" ng-include="'views/common/header.html'"></div>
+
+<!-- Navigation -->
+<aside id="menu" ng-include="'views/common/navigation.html'"></aside>
+
+<!-- Main Wrapper -->
+<div id="wrapper">
+
+<div class="content" animate-panel effect="zoomIn">
+<div class="row">
+    <div class="col-md-12" ng-controller="ContactNewCtrl">
+        <form sf-schema="schema" sf-form="form" sf-model="model">
+
+
+        </form>
+        <p>{{model}}</p>
+       
+    </div>
+</div>
+</div>
+</div>

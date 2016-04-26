@@ -1,0 +1,38 @@
+<div id="navigation">
+    <!--<div class="profile-picture">
+        <div class="stats-label text-color">
+            <span class="font-extra-bold font-uppercase">Username</span>
+
+            <div class="dropdown" uib-dropdown >
+                <a uib-dropdown-toggle href="#">
+                    <small class="text-muted">Founder of App <b class="caret"></b></small>
+                </a>
+                <ul uib-dropdown-menu class="animated flipInX m-t-xs">
+                    <li><a>Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>-->
+
+    <ul side-navigation class="nav metismenu" id="side-menu">
+        <li ui-sref-active="active">
+            <a ui-sref="dashboard"> <span class="nav-label">工作台</span></a>
+        </li>
+        <li ng-class="{'active': $state.includes('contact') || $state.includes('contact')}">
+            <a href="#"> <span class="nav-label">联系人</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level" ng-class="{'in': $state.includes('contact') || $state.includes('contact')}">
+
+                <li ui-sref-active="active"><a ui-sref="contact.new">新建联系人</a></li>
+                <li ui-sref-active="active"><a ui-sref="contact.list">我的联系人</a></li>
+            </ul>
+        </li>
+        <li ng-class="{'active': $state.includes('setting')}">
+            <a href="#"> <span class="nav-label">设置</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level" ng-class="{'in': $state.includes('setting')}">
+                <li ui-sref-active="active"><a ui-sref="setting.general">通用</a></li>
+            </ul>
+        </li>
+
+        
+    </ul>
+</div>

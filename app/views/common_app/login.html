@@ -1,0 +1,58 @@
+<div class="color-line"></div>
+
+<!--<div class="back-link">
+    <a ui-sref="dashboard" class="btn btn-primary">Back to Dashboard</a>
+</div>-->
+
+<div class="login-container" ng-controller="loginCtrl">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center m-b-md">
+                <h3>登录</h3>
+                <small></small>
+            </div>
+            <div class="hpanel">
+                <div class="panel-body">
+                        <form action="#" id="loginForm">
+                            <div class="form-group">
+                                <label class="control-label" for="username">用户名</label>
+                                <input type="text" placeholder="用户名" title="请输入你的用户名" required="" value="" name="username" id="username" ng-model="username" class="form-control">
+                                <span class="help-block small"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="password">密码</label>
+                                <input type="password" title="请输入你的密码" placeholder="密码" required="" value="" name="password" id="password" ng-model="password" class="form-control">
+                                <span class="help-block small"></span>
+                            </div>
+                            <div class="checkbox">
+                                    <input icheck type="checkbox" ng-model="remember" ng-init="remember = true">
+                                     记住登录状态
+                                <p class="help-block small">(请不用在公用电脑中记住登录状态)</p>
+                            </div>
+                            <button class="btn btn-success btn-block">登录</button>
+                            <a class="btn btn-default btn-block" ng-click="login()" >注册</a>
+
+                            <a class="btn btn-default btn-block" ng-click="gettoken()" >get token</a>
+                            <a class="btn btn-default btn-block" ng-click="test()" >test api</a>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <strong>云门户</strong> <br/> 2015,2016 Copyright Smallpay.Cloud
+        </div>
+    </div>
+    
+    <label for="city">City</label>
+    <input type="text" ng-model="city" /></br>
+    <label for="units">Units</label>
+    <input type="radio" ng-model="units" value="metric"/> Metric
+    <input type="radio" ng-model="units" value="imperial"/> Imperial</br>
+    <button ng-click="change()">Change</button>
+    <h3>{{data.name}}</h3>
+    <p>{{description}}</p>
+    <p>Temperature: {{main.temp}}</p>
+
+</div>

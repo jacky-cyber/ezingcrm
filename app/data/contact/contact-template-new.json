@@ -1,0 +1,64 @@
+{
+	"schema":{
+		"type": "object",
+	  	"title": "Comment",
+	  	"properties": {
+	    	"firstname": {
+	      		"title": "姓",
+	      		"type": "string",
+	      		"maxLength": 20,
+	      		"validationMessage": "请输入姓氏"	
+	    	},
+	    	"lastname": {
+	      		"title": "名",
+	      		"type": "string",
+	      		"description": "真实姓名.",
+	      		"validationMessage": "请输入名字"	
+	    	},
+	    	"comment": {
+	      		"title": "备注",
+	      		"type": "string"
+	    	}
+	  	},
+	  	"required": [
+	    	"firstname",
+	    	"lastname"
+	  	]
+	},
+	"form":[
+		{
+	    "type": "help",
+	    "helpvalue": "<div class=\"alert alert-info\">新建联系人</div>"
+	  },
+	  {
+	    "type": "section",
+	    "htmlClass": "row",
+	    "items": [
+	      {
+	        "type": "section",
+	        "htmlClass": "col-xs-6",
+	        "items": [
+	          "firstname"
+	        ]
+	      },
+	      {
+	        "type": "section",
+	        "htmlClass": "col-xs-6",
+	        "items": [
+	          "lastname"
+	        ]
+	      }
+	    ]
+	  },
+	  {
+	    "key": "comment",
+	    "type": "textarea",
+	    "placeholder": "备注信息"
+	  },
+	  {
+	    "type": "submit",
+	    "style": "btn-info",
+	    "title": "保存"
+	  }
+	]
+}
